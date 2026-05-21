@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Life</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <!-- HÀNG TRÊN -->
+    <div class="left-header">
+
+        <h1>🌿 Green Life</h1>
+
+        <div class="center-header">
+
+            <div class="item">
+                <b>Thanh toán tại nhà</b><br>
+                <span>Khu vực Hồ Chí Minh</span>
+            </div>
+
+            <div class="item">
+                <b>Hotline: 0908.573.508</b><br>
+                <span>Tư vấn 24/7 miễn phí</span>
+            </div>
+
+            <div class="item">
+                <b>Giao hàng toàn quốc</b><br>
+                <span>Ship COD tận nhà</span>
+            </div>
+
+        </div>
+
+        <!-- ĐĂNG NHẬP -->
+        <div class="right-header">
+
+            <div class="user">
+
+                👤 Đăng nhập
+
+                <div class="login-dropdown">
+
+                    <input type="text" placeholder="Tên đăng nhập">
+
+                    <input type="password" placeholder="Mật khẩu">
+
+                    <button>Đăng nhập</button>
+
+                    <a href="#">Quên mật khẩu?</a>
+
+                    <a href="#">Đăng ký</a>
+
+                </div>
+
+            </div>
+
+            <!-- GIỎ HÀNG -->
+            <div class="cart">
+
+                <div class="cart-icon">
+
+                    🛒 Giỏ hàng
+
+                    <span id="cart-count">0</span>
+
+                </div>
+
+                <div class="cart-dropdown">
+
+                    <h3>Giỏ hàng</h3>
+
+                    <div id="cart-items">
+
+                        <p>Chưa có sản phẩm</p>
+
+                    </div>
+
+                    <div class="cart-total">
+
+                        Tổng:
+                        <span id="cart-total">0đ</span>
+
+                    </div>
+
+                    <div class="cart-buttons">
+
+                        <button onclick="window.location.href='cart.html'">
+                            Xem giỏ hàng
+                        </button>
+
+                    <button onclick="window.location.href='checkout.html'">
+                            Thanh toán
+                    </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- HÀNG DƯỚI -->
+    <div class="menu-search">
+
+        <nav>
+
+            <a href="index.html">Trang chủ</a>
+
+            <div class="dropdown">
+
+                <a href="products.html">Sản phẩm ▼</a>
+
+                <div class="dropdown-menu">
+
+                    <a href="#">Sen đá</a>
+                    <a href="#">Cây thủy sinh</a>
+                    <a href="#">Cây hoa</a>
+                    <a href="#">Cây văn phòng</a>
+                    <a href="#">Cây trong nhà</a>
+                    <a href="#">Đồ trang trí</a>
+
+                </div>
+
+            </div>
+
+            <a href="about.html">Giới thiệu</a>
+
+            <a href="contact.html">Liên hệ</a>
+
+            <a href="labs.html">Lab thực hành</a>
+
+        </nav>
+
+        <div class="search">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Bạn muốn tìm gì?">
+            <button>Tìm kiếm</button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- HÌNH TRANG CHỦ -->
+<div class="slider">
+
+    <div class="slides">
+
+        <img src="image/nền1.png"
+        class="slide"
+        alt="Banner 1">
+
+        <img src="image/nền2.png"
+        class="slide"
+        alt="Banner 2">
+
+        <img src="image/nền3.png"
+        class="slide"
+        alt="Banner 3">
+
+        <img src="image/nền4.png"
+        class="slide"
+        alt="Banner 4">
+
+    </div>
+
+    <span class="prev">❮</span>
+
+    <span class="next">❯</span>
+
+</div>
+
+<!-- LOẠI CÂY ƯA CHUỘNG -->
+<section class="favorite-plants">
+
+    <h2>Loại cây ưa chuộng</h2>
+
+    <div class="product-list">
+
+        <!-- SẢN PHẨM 1 -->
+        <div class="product-card">
+
+            <img src="image/hoa hong.jpg"
+            alt="Hoa hồng tạo kiểu">
+
+            <h3>Hoa hồng tạo kiểu</h3>
+
+            <p class="price">2.200.000đ</p>
+
+            <div class="product-buttons">
+
+                <button class="heart-btn">
+                    &#10084;
+                </button>
+
+                <button class="cart-btn"
+                onclick="addToCart(
+                'Hoa hồng tạo kiểu',
+                '2.200.000đ',
+                'image/hoa hong.jpg'
+                )">
+
+                    Thêm giỏ hàng
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- SẢN PHẨM 2 -->
+        <div class="product-card">
+
+            <img src="image/cay sen da.jpg"
+            alt="Sen đá để bàn">
+
+            <h3>Sen đá để bàn</h3>
+
+            <p class="price">120.000đ</p>
+
+            <div class="product-buttons">
+
+                <button class="heart-btn">
+                    &#10084;
+                </button>
+
+                <button class="cart-btn"
+                onclick="addToCart(
+                'Sen đá để bàn',
+                '120.000đ',
+                'image/cay sen da.jpg'
+                )">
+
+                    Thêm giỏ hàng
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- SẢN PHẨM 3 -->
+        <div class="product-card">
+
+            <img src="image/cay hanh phuc.jpg"
+            alt="Cây hạnh phúc chậu lớn">
+
+            <h3>Cây hạnh phúc chậu lớn</h3>
+
+            <p class="price">800.000đ</p>
+
+            <div class="product-buttons">
+
+                <button class="heart-btn">
+                    &#10084;
+                </button>
+
+                <button class="cart-btn"
+                onclick="addToCart(
+                'Cây hạnh phúc chậu lớn',
+                '800.000đ',
+                'image/cay hanh phuc.jpg'
+                )">
+
+                    Thêm giỏ hàng
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+    <div class="newsletter-container">
+
+        <h2>Đăng ký nhận bản tin</h2>
+
+        <div class="newsletter-box">
+
+            <input
+            type="email"
+            placeholder="Nhập địa chỉ email của bạn">
+
+            <button>Đăng ký</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <!-- Green Life -->
+    <div class="footer-column">
+
+        <h3>🌿 Green Life</h3>
+
+        <p>
+            Mang lại cuộc sống xanh cho ngôi nhà của bạn!!!<br>
+            Bài làm của Huỳnh Trung Hiếu.<br>
+            Xây dựng web bán cây kiểng.<br>
+            Môn nhập môn web và ứng dụng.
+        </p>
+
+    </div>
+
+    <!-- Trợ giúp -->
+    <div class="footer-column">
+
+        <h3>Mục trợ giúp</h3>
+
+        <p>
+            Chính sách bảo hành<br>
+            Hướng dẫn mua hàng<br>
+            Chính sách vận chuyển<br>
+            Câu hỏi thường gặp
+        </p>
+
+    </div>
+
+    <!-- Địa chỉ -->
+    <div class="footer-column">
+
+        <h3>Địa chỉ</h3>
+
+        <p>
+            Phạm Hùng, Quận 7<br>
+            Hồ Chí Minh<br>
+            Hotline: 0908 573 589
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

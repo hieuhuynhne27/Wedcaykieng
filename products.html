@@ -1,0 +1,803 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+
+    <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Sản phẩm</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+    <header>
+
+        <!-- HÀNG TRÊN -->
+        <div class="left-header">
+
+            <h1>🌿 Green Life</h1>
+
+            <div class="center-header">
+
+                <div class="item">
+
+                    <b> Thanh toán tại nhà</b><br>
+
+                    <span>Khu vực Hồ Chí Minh</span>
+
+                </div>
+
+                <div class="item">
+
+                    <b> Hotline: 0908.573.508</b><br>
+
+                    <span>Tư vấn 24/7 miễn phí</span>
+
+                </div>
+
+                <div class="item">
+
+                    <b> Giao hàng toàn quốc</b><br>
+
+                    <span>Ship COD tận nhà</span>
+
+                </div>
+
+            </div>
+
+            <!-- ĐĂNG NHẬP -->
+            <div class="right-header">
+
+                <div class="user">
+
+                    👤 Đăng nhập
+
+                    <div class="login-dropdown">
+
+                        <input type="text"
+                        placeholder="Tên đăng nhập">
+
+                        <input type="password"
+                        placeholder="Mật khẩu">
+
+                        <button>Đăng nhập</button>
+
+                        <a href="#">Quên mật khẩu?</a>
+
+                        <a href="#">Đăng ký</a>
+
+                    </div>
+
+                </div>
+
+                <!-- GIỎ HÀNG -->
+                <div class="cart">
+
+                    <div class="cart-icon">
+
+                        🛒 Giỏ hàng
+
+                        <span id="cart-count">0</span>
+
+                    </div>
+
+                    <div class="cart-dropdown">
+
+                        <h3>Giỏ hàng</h3>
+
+                        <div id="cart-items">
+
+                            <p>Chưa có sản phẩm</p>
+
+                        </div>
+
+                        <div class="cart-total">
+
+                            Tổng:
+                            <span id="cart-total">0đ</span>
+
+                        </div>
+
+                        <div class="cart-buttons">
+
+                            <button
+                            onclick="window.location.href='cart.html'">
+
+                                Xem giỏ hàng
+
+                            </button>
+
+                    <button onclick="window.location.href='checkout.html'">
+                            Thanh toán
+                    </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HÀNG DƯỚI -->
+        <div class="menu-search">
+
+            <nav>
+
+                <a href="index.html">Trang chủ</a>
+
+                <!-- DROPDOWN -->
+                <div class="dropdown">
+
+                    <a href="products.html">
+
+                        Sản phẩm ▼
+
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="#"
+                        onclick="showCategory('senda')">
+
+                            Sen đá
+
+                        </a>
+
+                        <a href="#"
+                        onclick="showCategory('thuysinh')">
+
+                            Cây thủy sinh
+
+                        </a>
+
+                        <a href="#"
+                        onclick="showCategory('cayhoa')">
+
+                            Cây hoa
+
+                        </a>
+
+                        <a href="#"
+                        onclick="showCategory('vanphong')">
+
+                            Cây văn phòng
+
+                        </a>
+
+                        <a href="#"
+                        onclick="showCategory('hatgiong')">
+
+                            Hạt giống
+
+                        </a>
+
+                        <a href="#"
+                        onclick="showCategory('trangtri')">
+
+                            Đồ trang trí
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="about.html">
+
+                    Giới thiệu
+
+                </a>
+
+                <a href="contact.html">
+
+                    Liên hệ
+
+                </a>
+
+                    <a href="labs.html">
+
+                    Lab thực hành
+
+                </a>
+
+            </nav>
+
+            <!-- SEARCH -->
+            <div class="search">
+
+                <input type="text"
+                id="searchInput"
+                placeholder="Bạn muốn tìm gì?">
+
+                <button>
+
+                    Tìm kiếm
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <div class="products-page">
+
+        
+     <!--================== SEN ĐÁ ===================-->
+<section id="senda" class="product-section">
+
+    <h2>Sen đá</h2>
+
+    <div class="product-list">
+
+<!-- sản phẩm 1 -->
+        <div class="product-card">
+
+            <img src="image/senda1.jpg"
+            alt="Sen đá kim cương">
+
+            <h3>Sen đá kim cương</h3>
+
+            <p class="price">120.000đ</p>
+
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sen đá kim cương',
+            '120.000đ',
+            'image/senda1.jpg'
+            )">
+
+                Thêm giỏ hàng
+
+            </button>
+
+        </div>
+
+<!-- sản phẩm 2 -->
+        <div class="product-card">
+
+            <img src="image/senda2.jpg"
+            alt="Sen đá móng rồng">
+
+            <h3>Sen đá móng rồng</h3>
+
+            <p class="price">90.000đ</p>
+
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sen đá móng rồng',
+            '90.000đ',
+            'image/senda2.jpg'
+            )">
+
+                Thêm giỏ hàng
+
+            </button>
+
+        </div>
+
+<!-- sản phẩm 3 -->
+        <div class="product-card">
+
+            <img src="image/senda3.jpg"
+            alt="Sen đá ngọc bích">
+
+            <h3>Sen đá ngọc bích</h3>
+
+            <p class="price">46.000đ</p>
+
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sen đá ngọc bích',
+            '46.000đ',
+            'image/senda3.jpg'
+            )">
+
+                Thêm giỏ hàng
+
+            </button>
+
+        </div>
+
+<!-- sản phẩm 4 -->
+        <div class="product-card">
+
+            <img src="image/senda4.jpg"
+            alt="Sen đá chuỗi ngọc">
+
+            <h3>Sen đá chuỗi ngọc</h3>
+
+            <p class="price">350.000đ</p>
+
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sen đá chuỗi ngọc',
+            '350.000đ',
+            'image/senda4.jpg'
+            )">
+
+                Thêm giỏ hàng
+
+            </button>
+
+        </div>
+
+ <!-- sản phẩm 5 -->
+        <div class="product-card">
+
+            <img src="image/senda5.jpg"
+            alt="Sen đá hồng mập">
+
+            <h3>Sen đá hồng mập</h3>
+
+            <p class="price">46.000đ</p>
+
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sen đá hồng mập',
+            '46.000đ',
+            'image/senda5.jpg'
+            )">
+
+                Thêm giỏ hàng
+
+            </button>
+
+        </div>
+
+<!-- sản phẩm 6 -->
+        <div class="product-card">
+
+            <img src="image/senda6.jpg"
+            alt="Sen đá ruby">
+
+            <h3>Sen đá ruby</h3>
+
+            <p class="price">46.000đ</p>
+
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sen đá ruby',
+            '46.000đ',
+            'image/senda6.jpg'
+            )">
+
+                Thêm giỏ hàng
+
+            </button>
+
+        </div>
+<!-- sản phẩm 7 -->
+         <div class="product-card">
+
+            <img src="image/senda7.png"
+            alt="Sen đá sao biển">
+
+            <h3>Sen đá sao biển</h3>
+
+            <p class="price">40.000đ</p>
+
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sen đá sao biển',
+            '40.000đ',
+            'image/senda7.jpg'
+            )">
+
+                Thêm giỏ hàng
+
+            </button>
+
+        </div>
+<!-- sản phẩm 7 -->
+         <div class="product-card">
+
+            <img src="image/senda8.png"
+            alt="Sen đá hoa hồng">
+
+            <h3>Sen đá hoa hồng</h3>
+
+            <p class="price">46.000đ</p>
+
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sen đá hoa hồng',
+            '46.000đ',
+            'image/senda8.jpg'
+            )">
+
+                Thêm giỏ hàng
+
+            </button>
+
+        </div>
+
+   
+<!--=====================================================-->
+    </div>
+</section>
+
+        
+     <!--================== THỦY SINH ===================-->
+<section id="thuysinh" class="product-section">
+            <h2>Cây thủy sinh</h2>
+                <div class="product-list">
+<!-- thủy sinh 1 -->
+        <div class="product-card">
+            <img src="image/thuysinh1.jpg"
+            alt="Kim tiền">
+            <h3>Kim tiền</h3>
+            <p class="price">150.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Kim tiền',
+            '150.000đ',
+            'image/thuysinh1.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- thủy sinh 2 -->
+        <div class="product-card">
+            <img src="image/thuysinh2.jpg"
+            alt="Trúc phú quý">
+            <h3>Trúc phú quý</h3>
+            <p class="price">250.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Trúc phú quý',
+            '250.000đ',
+            'image/thuysinh2.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- thủy sinh 3 -->
+        <div class="product-card">
+            <img src="image/thuysinh3.jpg"
+            alt="Lan ý">
+            <h3>Lan ý</h3>
+            <p class="price">270.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Lan ý',
+            '270.000đ',
+            'image/thuysinh3jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- thủy sinh 4 -->
+        <div class="product-card">
+            <img src="image/thuysinh4.jpg"
+            alt="Dạ lan hương">
+            <h3>Dạ lan hương</h3>
+            <p class="price">250.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Dạ lan hương',
+            '250.000đ',
+            'image/thuysinh4.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- thủy sinh 5 -->
+        <div class="product-card">
+            <img src="image/thuysinh5.jpg"
+            alt="Vạn lộc">
+            <h3>Vạn lộc</h3>
+            <p class="price">120.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Vạn lộc',
+            '120.000đ',
+            'image/thuysinh6.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- thủy sinh 6 -->
+        <div class="product-card">
+            <img src="image/thuysinh6.jpg"
+            alt="Phát lộc">
+            <h3>Phát lộc</h3>
+            <p class="price">200.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Phát lộc',
+            '200.000đ',
+            'image/thuysinh6.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- thủy sinh 7 -->
+        <div class="product-card">
+            <img src="image/thuysinh7.jpg"
+            alt="Trầu bà">
+            <h3>Trầu bà</h3>
+            <p class="price">150.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Trầu bà',
+            '150.000đ',
+            'image/thuysinh7.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- thủy sinh 8 -->
+        <div class="product-card">
+            <img src="image/thuysinh8.jpg"
+            alt="Ngọc ngân">
+            <h3>Ngọc ngân</h3>
+            <p class="price">120.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Ngọc ngân',
+            '120.000đ',
+            'image/thuysinh8.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!--=====================================================-->
+                </div>
+</section>
+<!--================== HOA ===================-->
+<section id="cayhoa" class="product-section">
+            <h2>Cây hoa</h2>
+            <div class="product-list">
+<!-- hoa 1 -->
+        <div class="product-card">
+            <img src="image/hoa1.jpg"
+            alt="Hoa dừa cạn">
+            <h3>Hoa dừa cạn</h3>
+            <p class="price">120.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Hoa dừa cạn',
+            '120.000đ',
+            'image/hoa1.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- hoa 2  -->
+        <div class="product-card">
+            <img src="image/hoa2.jpg"
+            alt="Hoa cẩm chướng">
+            <h3>Hoa cẩm chướng</h3>
+            <p class="price">120.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Hoa cẩm chướng',
+            '120.000đ',
+            'image/hoa2.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- hoa 3 -->
+        <div class="product-card">
+            <img src="image/hoa3.jpg"
+            alt="Hoa phong lữ thảo">
+            <h3>Hoa phong lữ thảo</h3>
+            <p class="price">210.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Hoa phong lữ thảo',
+            '210.000đ',
+            'image/hoa3.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- hoa 4 -->
+        <div class="product-card">
+            <img src="image/hoa4.jpg"
+            alt="Hoa dạ yến thảo">
+            <h3>Hoa dạ yến thảo</h3>
+            <p class="price">120.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Hoa dạ yến thảo',
+            '120.000đ',
+            'image/hoa4.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!--=====================================================-->
+            </div>
+</section>
+<!--================== VĂN PHÒNG ===================-->
+<section id="vanphong" class="product-section">
+            <h2>Cây văn phòng</h2>
+            <div class="product-list">
+<!-- văn phòng 1 -->
+        <div class="product-card">
+            <img src="image/vanphong1.jpg"
+            alt="Cây lưỡi hổ">
+            <h3>Cây lưỡi hổ</h3>
+            <p class="price">450.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Cây lưỡi hổ',
+            '450.000đ',
+            'image/vanphong1.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- văn phòng 2 -->
+        <div class="product-card">
+            <img src="image/vanphong2.jpg"
+            alt="Cây thiết mộc lan">
+            <h3>Cây thiết mộc lan</h3>
+            <p class="price">470.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Cây thiết mộc lan',
+            '470.000đ',
+            'image/vanphong2.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!--=====================================================-->
+            </div>
+</section>
+<!--================== HẠT GIỐNG ===================-->
+<section id="hatgiong" class="product-section">
+            <h2>Hạt giống</h2>
+            <div class="product-list">
+<!-- hạt giống 1 -->
+        <div class="product-card">
+            <img src="image/hat1.png"
+            alt="Xà lách">
+            <h3>Xà lách</h3>
+            <p class="price">13.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Xà lách',
+            '13.000đ',
+            'image/hat1.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- hạt giống 2 -->
+        <div class="product-card">
+            <img src="image/hat2.jpg"
+            alt="Cải bẹ dún">
+            <h3>Cải bẹ dún</h3>
+            <p class="price">13.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Cải bẹ dún',
+            '13.000đ',
+            'image/hat2.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- hạt giống 3 -->
+        <div class="product-card">
+            <img src="image/hat3.jpg"
+            alt="Cà chua bi">
+            <h3>Cà chua bi</h3>
+            <p class="price">13.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Cà chua bi',
+            '13.000đ',
+            'image/hat3.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- hạt giống 4 -->
+        <div class="product-card">
+            <img src="image/hat4.jpg"
+            alt="Ớt chuông">
+            <h3>Ớt chuông</h3>
+            <p class="price">13.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Ớt chuông',
+            '13.000đ',
+            'image/hat4.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!--=====================================================-->
+           </div>
+</section>
+<!--================== TRANG TRÍ ===================-->
+<section id="trangtri" class="product-section">
+            <h2>Trang trí</h2>
+            <div class="product-list">
+<!-- trang trí 1 -->
+        <div class="product-card">
+            <img src="image/trangtri1.jpg"
+            alt="Đèn đá">
+            <h3>Đèn đá</h3>
+            <p class="price">350.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Đèn đá',
+            '350.000đ',
+            'image/trangtri1.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- trang trí 2 -->
+        <div class="product-card">
+            <img src="image/trangtri2.jpg"
+            alt="Lavabo đá">
+            <h3>Lavabo đá</h3>
+            <p class="price">1.560.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Lavabo đá',
+            '1.560.000đ',
+            'image/trangtri2.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- trang trí 3 -->
+        <div class="product-card">
+            <img src="image/trangtri3.jpg"
+            alt="Sỏi trang trí">
+            <h3>Sỏi trang trí</h3>
+            <p class="price">100.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Sỏi trang trí',
+            '100.000đ',
+            'image/trangtri3.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!-- trang trí 4 -->
+        <div class="product-card">
+            <img src="image/trangtri4.jpg"
+            alt="Đài phun ấm trà">
+            <h3>Đài phun ấm trà</h3>
+            <p class="price">12.000.000đ</p>
+            <button class="cart-btn"
+            onclick="addToCart(
+            'Đài phun ấm trà',
+            '12.000.000đ',
+            'image/trangtri4.jpg'
+            )">
+                Thêm giỏ hàng
+            </button>
+        </div>
+<!--=====================================================-->
+            </div>
+</section>
+<!--=====================================================-->
+    </div>
+    <script src="js/script.js"></script>
+
+    </body>
+    </html>

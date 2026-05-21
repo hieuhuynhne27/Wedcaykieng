@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Thanh toán</title>
+
+    <link rel="stylesheet"
+    href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <!-- HÀNG TRÊN -->
+    <div class="left-header">
+
+        <h1>🌿 Green Life</h1>
+
+        <div class="center-header">
+
+            <div class="item">
+                <b> Thanh toán tại nhà</b><br>
+                <span>Khu vực Hồ Chí Minh</span>
+            </div>
+
+            <div class="item">
+                <b> Hotline: 0908.573.508</b><br>
+                <span>Tư vấn 24/7 miễn phí</span>
+            </div>
+
+            <div class="item">
+                <b> Giao hàng toàn quốc</b><br>
+                <span>Ship COD tận nhà</span>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right-header">
+
+            <!-- LOGIN -->
+            <div class="user">
+
+                👤 Đăng nhập
+
+                <div class="login-dropdown">
+
+                    <input type="text"
+                    placeholder="Tên đăng nhập">
+
+                    <input type="password"
+                    placeholder="Mật khẩu">
+
+                    <button>Đăng nhập</button>
+
+                    <a href="#">Quên mật khẩu?</a>
+
+                    <a href="#">Đăng ký</a>
+
+                </div>
+
+            </div>
+
+            <!-- CART -->
+            <div class="cart">
+
+                <div class="cart-icon">
+
+                    🛒 Giỏ hàng
+
+                    <span id="cart-count">0</span>
+
+                </div>
+
+                <div class="cart-dropdown">
+
+                    <h3>Giỏ hàng</h3>
+
+                    <div id="cart-items">
+
+                        <p>Chưa có sản phẩm</p>
+
+                    </div>
+
+                    <div class="cart-total">
+
+                        Tổng:
+                        <span id="cart-total">0đ</span>
+
+                    </div>
+
+                    <div class="cart-buttons">
+
+                        <button
+                        onclick="window.location.href='cart.html'">
+
+                            Xem giỏ hàng
+
+                        </button>
+
+                        <button
+                        onclick="window.location.href='checkout.html'">
+
+                            Thanh toán
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MENU -->
+    <div class="menu-search">
+
+        <nav>
+
+            <a href="index.html">Trang chủ</a>
+
+            <a href="products.html">Sản phẩm</a>
+
+            <a href="about.html">Giới thiệu</a>
+
+            <a href="contact.html">Liên hệ</a>
+
+            <a href="labs.html">Lab thực hành</a>
+
+        </nav>
+
+        <!-- SEARCH -->
+        <div class="search">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Bạn muốn tìm gì?">
+
+            <button>Tìm kiếm</button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- BANNER -->
+
+<section class="labs-banner">
+
+    <h1>THANH TOÁN</h1>
+
+    <p>
+        Điền thông tin để hoàn tất đơn hàng
+    </p>
+
+</section>
+
+<!-- CHECKOUT -->
+
+<div class="checkout-container">
+
+    <h1>Thông tin thanh toán</h1>
+
+    <form id="checkout-form">
+
+        <input
+        type="text"
+        id="fullname"
+        placeholder="Họ và tên"
+        required>
+
+        <input
+        type="text"
+        id="address"
+        placeholder="Địa chỉ nhận hàng"
+        required>
+
+        <input
+        type="text"
+        id="phone"
+        placeholder="Số điện thoại"
+        required>
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        required>
+
+        <div class="checkout-total">
+
+            Tổng thanh toán:
+            <span id="checkout-total">0đ</span>
+
+        </div>
+
+        <button type="submit">
+
+            Xác nhận thanh toán
+
+        </button>
+
+    </form>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <!-- CỘT 1 -->
+    <div class="footer-column">
+
+        <h3>🌿 Green Life</h3>
+
+        <p>
+            Mang lại cuộc sống xanh cho ngôi nhà của bạn!!!<br>
+
+            Bài làm của Huỳnh Trung Hiếu.<br>
+
+            Xây dựng web bán cây kiểng.<br>
+
+            Môn nhập môn web và ứng dụng.
+        </p>
+
+    </div>
+
+    <!-- CỘT 2 -->
+    <div class="footer-column">
+
+        <h3>Mục trợ giúp</h3>
+
+        <p>
+            Chính sách bảo hành<br>
+
+            Hướng dẫn mua hàng<br>
+
+            Chính sách vận chuyển<br>
+
+            Câu hỏi thường gặp
+        </p>
+
+    </div>
+
+    <!-- CỘT 3 -->
+    <div class="footer-column">
+
+        <h3>Địa chỉ</h3>
+
+        <p>
+            Phạm Hùng, Quận 7<br>
+
+            Hồ Chí Minh<br>
+
+            Hotline: 0908 573 589
+        </p>
+
+    </div>
+
+</footer>
+
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <h2>🌿 Xác nhận thanh toán</h2>
+
+        <p>
+            Bạn chắc chắn muốn thanh toán chứ?
+        </p>
+
+        <div class="popup-btn">
+
+            <button id="noBtn">
+                Huỷ
+            </button>
+
+            <button id="yesBtn">
+                Đồng ý
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>

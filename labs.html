@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Lab thực hành</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <!-- HÀNG TRÊN -->
+    <div class="left-header">
+        <h1>🌿 Green Life</h1>
+        <div class="center-header">
+            <div class="item">
+                <b> Thanh toán tại nhà</b><br>
+                <span>Khu vực Hồ Chí Minh</span>
+            </div>
+            <div class="item">
+                <b> Hotline: 0908.573.508</b><br>
+                <span>Tư vấn 24/7 miễn phí</span>
+            </div>
+            <div class="item">
+                <b> Giao hàng toàn quốc</b><br>
+                <span>Ship COD tận nhà</span>
+            </div>
+        </div>
+        <!-- ĐĂNG NHẬP -->
+        <div class="right-header">
+            <div class="user">
+                👤 Đăng nhập
+                <div class="login-dropdown">
+                    <input type="text"
+                    placeholder="Tên đăng nhập">
+                    <input type="password"
+                    placeholder="Mật khẩu">
+                    <button>Đăng nhập</button>
+                    <a href="#">Quên mật khẩu?</a>
+                    <a href="#">Đăng ký</a>
+                </div>
+            </div>
+            <!-- GIỎ HÀNG -->
+            <div class="cart">
+                <div class="cart-icon">
+                    🛒 Giỏ hàng
+                    <span id="cart-count">0</span>
+                </div>
+                <div class="cart-dropdown">
+                    <h3>Giỏ hàng</h3>
+                    <div id="cart-items">
+                        <p>Chưa có sản phẩm</p>
+                    </div>
+                    <div class="cart-total">
+                        Tổng:
+                        <span id="cart-total">0đ</span>
+                    </div>
+                    <div class="cart-buttons">
+                        <button
+                        onclick="window.location.href='cart.html'">
+                            Xem giỏ hàng
+                        </button>
+                    <button onclick="window.location.href='checkout.html'">
+                            Thanh toán
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MENU -->
+    <div class="menu-search">
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <div class="dropdown">
+                <a href="products.html">
+                    Sản phẩm ▼
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#">Sen đá</a>
+                    <a href="#">Cây thủy sinh</a>
+                    <a href="#">Cây hoa</a>
+                    <a href="#">Cây văn phòng</a>
+                    <a href="#">Cây trong nhà</a>
+                    <a href="#">Đồ trang trí</a>
+                </div>
+            </div>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="labs.html"
+            class="active-menu">
+                Lab thực hành
+            </a>
+        </nav>
+        <!-- SEARCH -->
+        <div class="search">
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Bạn muốn tìm gì?">
+            <button>Tìm kiếm</button>
+        </div>
+    </div>
+</header>
+<!-- BANNER -->
+<section class="labs-banner">
+    <h1>LAB THỰC HÀNH</h1>
+    <p>
+        Tổng hợp bài thực hành HTML,
+        CSS và Javascript
+    </p>
+</section>
+<!-- LAB SECTION -->
+<section class="labs-section">
+    <div class="labs-container">
+        <!-- LAB 1 -->
+        <div class="lab-card">
+            <h3>Lab01: HTML</h3>
+            <a href="ThucHanh/lab1/lab1_3.html">
+                Lab1_3
+            </a>
+            <a href="ThucHanh/lab1/lab1_4.html">
+                Lab1_4
+            </a>
+            <a href="ThucHanh/lab1/lab1_4.html"
+            class="lab-btn">
+                Xem chi tiết
+            </a>
+        </div>
+        <!-- LAB 2 -->
+        <div class="lab-card">
+            <h3>Lab02: Table & List</h3>
+            <a href="ThucHanh/lab2/lab2_1.html">
+                Lab2_1
+            </a>
+            <a href="ThucHanh/lab2/lab2_2.html">
+                Lab2_2
+            </a>
+            <a href="ThucHanh/lab2/lab2_3.html">
+                Lab2_3
+            </a>
+            <a href="ThucHanh/lab2/lab2_3.html"
+            class="lab-btn">
+                Xem chi tiết
+            </a>
+        </div>
+        <!-- LAB 3 -->
+        <div class="lab-card">
+            <h3>Lab03: Frame & Form</h3>
+            <a href="ThucHanh/lab3/lab3_1.html">
+                Lab3_1
+            </a>
+            <a href="ThucHanh/lab3/lab3_2.html">
+                Lab3_2
+            </a>
+            <a href="ThucHanh/lab3/lab3_3.html">
+                Lab3_3
+            </a>
+            <a href="ThucHanh/lab3/lab3_3.html"
+            class="lab-btn">
+                Xem chi tiết
+            </a>
+        </div>
+        <!-- LAB 4 -->
+        <div class="lab-card">
+            <h3>Lab04: CSS cơ bản</h3>
+            <a href="ThucHanh/lab4/lab4_1.html">
+                Lab4_1
+            </a>
+            <a href="ThucHanh/lab4/lab4_2.html">
+                Lab4_2
+            </a>
+            <a href="ThucHanh/lab4/lab4_3.html">
+                Lab4_3
+            </a>
+            <a href="ThucHanh/lab4/lab4_3.html"
+            class="lab-btn">
+                Xem chi tiết
+            </a>
+        </div>
+        <!-- LAB 5 -->
+        <div class="lab-card">
+            <h3>Lab05: Thuộc tính CSS</h3>
+            <a href="ThucHanh/lab5/lab5_1.html">
+                Lab5_1
+            </a>
+            <a href="ThucHanh/lab5/lab5_2.html">
+                Lab5_2
+            </a>
+            <a href="ThucHanh/lab5/lab5_3.html">
+                Lab5_3
+            </a>
+            <a href="ThucHanh/lab5/lab5_4.html">
+                Lab5_4
+            </a>
+            <a href="ThucHanh/lab5/lab5_1.html"
+            class="lab-btn">
+                Xem chi tiết
+            </a>
+        </div>
+        <!-- LAB 6 -->
+        <div class="lab-card">
+            <h3>Lab06: Xây dựng layout responsive</h3>
+            <a href="ThucHanh/lab6/lab6_1.html">
+                Lab6_1
+            </a>
+            <a href="ThucHanh/lab6/lab6_2.html">
+                Lab6_2
+            </a>
+            <a href="ThucHanh/lab6/lab6_3.html">
+                Lab6_3
+            </a>
+            <a href="ThucHanh/lab6/lab6_3.html"
+            class="lab-btn">
+                Xem chi tiết
+            </a>
+        </div>
+        <!-- LAB 7 -->
+        <div class="lab-card">
+            <h3>Lab07: Javascript</h3>
+            <a href="ThucHanh/lab7/lab7_1.html">
+                Lab7_1
+            </a>
+            <a href="ThucHanh/lab7/lab7_2.html">
+                Lab7_2
+            </a>
+            <a href="ThucHanh/lab7/lab7_2.html"
+            class="lab-btn">
+                Xem chi tiết
+            </a>
+        </div>
+        <!-- LAB 8 -->
+        <div class="lab-card">
+            <h3>Lab08: Javascript nâng cao</h3>
+            <a href="ThucHanh/lab8/lab8_1.html">
+                Lab8_1
+            </a>
+            <a href="ThucHanh/lab8/lab8_2.html">
+                Lab8_2
+            </a>
+            <a href="ThucHanh/lab8/lab8_3.html">
+                Lab8_3
+            </a>
+            <a href="ThucHanh/lab8/lab8_3.html"
+            class="lab-btn">
+                Xem chi tiết
+            </a>
+        </div>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-column">
+
+        <h3>🌿 Green Life</h3>
+
+        <p>
+            Mang lại cuộc sống xanh cho ngôi nhà của bạn!!!<br>
+
+            Bài làm của Huỳnh Trung Hiếu.<br>
+
+            Xây dựng web bán cây kiểng.<br>
+
+            Môn nhập môn web và ứng dụng.
+        </p>
+
+    </div>
+
+    <div class="footer-column">
+
+        <h3>Mục trợ giúp</h3>
+
+        <p>
+            Chính sách bảo hành<br>
+
+            Hướng dẫn mua hàng<br>
+
+            Chính sách vận chuyển<br>
+
+            Câu hỏi thường gặp
+        </p>
+
+    </div>
+
+    <div class="footer-column">
+
+        <h3>Địa chỉ</h3>
+
+        <p>
+            Phạm Hùng, Quận 7<br>
+
+            Hồ Chí Minh<br>
+
+            Hotline: 0908 573 589
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
